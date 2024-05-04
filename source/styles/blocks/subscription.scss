@@ -1,0 +1,32 @@
+.subscription {
+  padding: 0 20px 14px;
+}
+
+.subscription__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.subscription__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.subscription__input {
+  padding: 0;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  border: 1px solid #cdcdcd;
+}
+
+.subscription__button {
+  padding: 10px 70px;
+  margin-top: 16px;
+}

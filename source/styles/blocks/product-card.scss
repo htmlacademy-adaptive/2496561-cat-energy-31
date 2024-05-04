@@ -1,0 +1,32 @@
+.product-card__link {
+  text-decoration: none;
+  color: #222222;
+}
+
+.product-card__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.product-card__description {
+  margin: 0;
+  font-family: $second-font;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.product-card__title--more {
+  color: #111111;
+}
+
+.product-card__link-button {
+  padding: 10px 70px;
+  color: inherit;
+  background-color: #f2f2f2;
+}

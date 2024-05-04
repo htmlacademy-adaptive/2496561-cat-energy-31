@@ -1,0 +1,36 @@
+.advantages__container {
+  padding: 0 20px 49px;
+}
+
+.advantages__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__description {
+  font-family: $second-font;
+  position: relative;
+  margin: 0;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+
+.advantages__description::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: -80px;
+  background-color: $bg-basic-green;
+}

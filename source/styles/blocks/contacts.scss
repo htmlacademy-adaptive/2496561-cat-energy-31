@@ -1,0 +1,27 @@
+.contacts__container {
+  padding: 26px 20px;
+}
+
+.contacts__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.contacts__description {
+  margin: 0;
+  font-family: $second-font;
+  line-height: 20px;
+  text-align: left;
+}
+
+.contacts__map {
+  background-image: url("/images/backgrounds/background-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 320px;
+  height: 362px;
+}
