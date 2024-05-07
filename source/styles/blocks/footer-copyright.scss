@@ -9,9 +9,29 @@
 }
 
 .footer-copyright__text {
+  position: relative;
   margin: 0;
   font-family: $second-font;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
+}
+
+.footer-copyright__text::after {
+  content: "";
+  position: absolute;
+  mask-image: url("../../images/logotype/logo-copyright.svg");
+  mask-repeat: no-repeat;
+  width: 27px;
+  height: 34px;
+  background-color: #666666;
+}
+
+.footer-copyright__text:hover::after,
+.footer-copyright__text:focus::after {
+  background-color: $bg-basic-green;
+}
+
+.footer-copyright__text:active {
+  opacity: 30%;
 }

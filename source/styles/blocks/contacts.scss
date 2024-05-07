@@ -6,6 +6,7 @@
   margin: 0;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-align: left;
   text-transform: uppercase;
   color: #111111;
@@ -19,7 +20,7 @@
 }
 
 .contacts__map {
-  background-image: url("/images/backgrounds/background-map-mobile@1x.png");
+  background-image: url("../../images/backgrounds/background-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 320px;

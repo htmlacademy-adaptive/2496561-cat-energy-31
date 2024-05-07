@@ -7,3 +7,11 @@
 .main-header__logo {
   text-decoration: none;
 }
+
+.main-header__logo:hover {
+  opacity: 80%;
+}
+
+.main-header__logo:active {
+  opacity: 60%;
+}

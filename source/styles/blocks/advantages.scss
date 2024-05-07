@@ -19,18 +19,69 @@
 
 .advantages__description {
   font-family: $second-font;
-  position: relative;
   margin: 0;
   margin-left: 80px;
   margin-bottom: 20px;
 }
 
-.advantages__description::before {
+.advantages__item {
+  position: relative;
+}
+
+.advantages__item::before {
   content: "";
   position: absolute;
   width: 60px;
   height: 60px;
   top: 0;
-  left: -80px;
+  left: 0;
   background-color: $bg-basic-green;
+}
+
+.advantages__item--nutrients::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../icons/icon-leaf.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 28px;
+  top: 16px;
+  left: 18px;
+}
+
+.advantages__item--view::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../icons/icon-glass-of-water.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 28px;
+  top: 16px;
+  left: 18px;
+}
+
+.advantages__item--nutrition::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../icons/icon-eat.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 28px;
+  top: 16px;
+  left: 18px;
+}
+
+.advantages__item--time::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../icons/icon-alarm.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 28px;
+  top: 16px;
+  left: 18px;
 }

@@ -7,6 +7,7 @@
   margin: 0;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   color: #222222;
@@ -23,10 +24,32 @@
 
 .product-card__title--more {
   color: #111111;
+  position: relative;
+  margin-top: 23px;
+}
+
+.product-card__title--more::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/icon-plus.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: -43px;
+  left: 125px;
 }
 
 .product-card__link-button {
   padding: 10px 70px;
   color: inherit;
   background-color: #f2f2f2;
+}
+
+.product-card__link-button:hover {
+  background: #ebebeb;
+}
+
+.product-card__link-button:active {
+  background: #ebebeb;
+  color: #444444;
 }

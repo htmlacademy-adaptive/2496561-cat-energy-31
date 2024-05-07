@@ -1,6 +1,6 @@
 .present {
   margin: 35px 20px 40px;
-  background-image: url("/images/backgrounds/background-gift-mobile@1x.png");
+  background-image: url("../../images/backgrounds/background-gift-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 280px;
@@ -8,9 +8,20 @@
 }
 
 .present__container {
+  position: relative;
   background-color: rgba(104, 183, 56, 0.85);
   width: 280px;
-  height: 290px;
+}
+
+.present__container::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/icon-gift.svg");
+  background-repeat: no-repeat;
+  width: 78px;
+  height: 81px;
+  top: 59px;
+  left: 101px;
 }
 
 .present__description {

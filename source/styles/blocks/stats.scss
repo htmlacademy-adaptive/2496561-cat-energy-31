@@ -1,0 +1,18 @@
+.stats__item {
+  border: 1px solid #cdcdcd;
+}
+
+.stats__number {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.stats__description {
+  margin: 0;
+  font-family: $second-font;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}

@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("/images/backgrounds/background-hero-mobile@1x.png");
+  background-image: url("../../images/backgrounds/background-hero-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -13,6 +13,7 @@
   margin: 0;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   text-align: center;
   color: #ffffff;
 }
