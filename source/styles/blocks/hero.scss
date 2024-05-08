@@ -1,34 +1,80 @@
-.hero {
-  background-image: url("../../images/backgrounds/background-hero-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+@media (max-width: 320px) {
+  .hero {
+    background-image: url("../../images/backgrounds/background-hero-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .hero__container {
+    padding: 27px 20px;
+    background-image: linear-gradient(to bottom, #68b738d9 67%, transparent 50%);
+  }
+
+  .hero__title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .hero__slogan {
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .hero__link {
+    display: block;
+    width: 280px;
+    height: 40px;
+    padding: 10px 39px;
+  }
 }
 
-.hero__container {
-  background-color: rgba(104, 183, 56, 0.85);
-  padding: 27px 20px;
+@media (min-width: 768px) {
+  .hero__container {
+    background-color: #ffffff;
+  }
+
+  .hero__title {
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+  }
+
+  .hero__slogan {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #000000;
+  }
+
+  .hero__link {
+    display: block;
+    font-size: 20px;
+    line-height: 26px;
+    width: 244px;
+    height: 54px;
+    padding: 14px 26px;
+  }
 }
 
-.hero__title {
-  margin: 0;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  text-align: center;
-  color: #ffffff;
-}
+@media (min-width: 1440px) {
+  .hero {
+    background-image: url("../../images/backgrounds/background-hero-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 
-.hero__slogan {
-  margin: 0;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: left;
-  color: #ffffff;
-}
-
-.hero__link {
-  display: block;
-  width: 280px;
-  height: 40px;
-  padding: 10px 39px;
+  .hero__container {
+    background-image: linear-gradient(to left, #68b738d9 50%, transparent 50%);
+  }
 }
