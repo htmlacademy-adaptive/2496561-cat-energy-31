@@ -1,8 +1,36 @@
-.main-nav__toggle {
+.main-nav__toggle-open {
+  display: none;
+  position: absolute;
+  top: 23px;
+  right: 20px;
   background-image: url("../../icons/open-navigation.svg");
   background-repeat: no-repeat;
   background-color: #ffffff;
   width: 24px;
   height: 24px;
   border: none;
+}
+
+.main-nav__toggle-close {
+  display: block;
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  background-image: url("../../icons/close-navigation.svg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  width: 18px;
+  height: 18px;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle-open,
+  .main-nav__toggle-close {
+    display: none;
+  }
+
+  .main-nav__navigation {
+    padding-top: 14px;
+  }
 }

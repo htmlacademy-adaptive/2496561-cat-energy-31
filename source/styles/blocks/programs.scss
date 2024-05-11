@@ -9,6 +9,7 @@
 }
 
 .programs__item {
+  min-height: 266px;
   margin-bottom: 20px;
   background-color: #f2f2f2;
   position: relative;
@@ -21,8 +22,8 @@
   background-color: $bg-basic-green;
   width: 50px;
   height: 50px;
-  top: 24;
-  left: 20;
+  top: 24px;
+  left: 20px;
 }
 
 .programs__item--weight-loss::after {
@@ -31,8 +32,8 @@
   background-image: url("../../icons/cat-slim.svg");
   width: 36px;
   height: 50px;
-  top: 21;
-  left: 27;
+  top: 21px;
+  left: 27px;
 }
 
 .programs__item--weight-gain::before {
@@ -42,8 +43,8 @@
   background-color: $bg-basic-green;
   width: 50px;
   height: 50px;
-  top: 24;
-  left: 20;
+  top: 24px;
+  left: 20px;
 }
 
 .programs__item--weight-gain::after {
@@ -52,27 +53,34 @@
   background-image: url("../../icons/cat-pro.svg");
   width: 67px;
   height: 28px;
-  top: 35;
-  left: 12;
+  top: 35px;
+  left: 12px;
 }
-
 
 .programs__title {
   margin: 0;
-  margin-left: 90px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
   color: #000000;
   text-transform: uppercase;
+  padding-top: 30px;
 }
 
 .programs__description {
   position: relative;
   font-family: $second-font;
   margin: 0;
-  padding: 29px 33px 38px 20px;
+  padding: 29px 20px 38px;
+}
+
+.programs__title--weight-loss {
+  padding-left: 20px;
+}
+
+.programs__title--weight-gain {
+  padding-left: 31px;
 }
 
 .programs__description::after {
@@ -86,6 +94,8 @@
 
 .programs__link {
   position: relative;
+  bottom: -5px;
+  left: 20px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
@@ -101,10 +111,123 @@
   background-repeat: no-repeat;
   width: 24px;
   height: 12px;
-  bottom: 24px;
+  bottom: 5px;
   left: 122px;
 }
 
+.programs__link:hover::after {
+  background-image: url("../../icons/icon-arrow-long.svg");
+}
+
+
 .programs__link:active {
   opacity: 30%;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__container {
+    padding: 0 30px;
+  }
+
+  .programs__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .programs__item {
+    min-height: 372px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .programs__item--weight-loss::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: $bg-basic-green;
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: 445px;
+  }
+
+  .programs__item--weight-loss::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/cat-slim.svg");
+    width: 140px;
+    height: 194px;
+    top: 81px;
+    left: 475px;
+  }
+
+  .programs__item--weight-gain::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: $bg-basic-green;
+    width: 200px;
+    height: 200px;
+    top: 91px;
+    left: 445px;
+  }
+
+  .programs__item--weight-gain::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/cat-pro.svg");
+    width: 268px;
+    height: 112px;
+    top: 135px;
+    left: 411px;
+  }
+
+  .programs__title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: left;
+    padding: 77px 228px 24px 53px;
+  }
+
+  .programs__description {
+    width: 440px;
+    font-family: $second-font;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin: 0;
+    padding: 0 53px 48px 52px;
+  }
+
+  .programs__description::after {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 240px;
+    bottom: 15px;
+    left: 20px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .programs__link {
+    position: relative;
+    bottom: 0;
+    left: 52px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .programs__link::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/icon-arrow.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 12px;
+    bottom: 5px;
+    left: 122px;
+  }
 }

@@ -17,7 +17,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
+    <a class="main-header__logo-link" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logotype/logo-desktop.svg">
         <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logotype/logo-tablet.svg">
@@ -29,15 +29,18 @@
       </picture>
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle-open" type="button">
         <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <button class="main-nav__toggle-close" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
       </button>
       <div class="main-nav__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="index.html">Главная</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item--current">
             <a class="navigation__link navigation__link--current" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="navigation__item">

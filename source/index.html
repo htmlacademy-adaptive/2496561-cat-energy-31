@@ -17,7 +17,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
+    <a class="main-header__logo-link" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logotype/logo-desktop.svg">
         <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logotype/logo-tablet.svg">
@@ -29,12 +29,15 @@
       </picture>
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle-open" type="button">
         <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <button class="main-nav__toggle-close" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
       </button>
       <div class="main-nav__navigation navigation">
         <ul class="navigation__list">
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item--current">
             <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
@@ -67,12 +70,12 @@
       <div class="programs__container">
         <ul class="programs__list">
           <li class="programs__item programs__item--weight-loss">
-            <h3 class="programs__title">Похудение</h3>
+            <h3 class="programs__title programs__title--weight-loss">Похудение</h3>
             <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="programs__link" href="#">Каталог slim</a>
           </li>
           <li class="programs__item programs__item--weight-gain">
-            <h3 class="programs__title">Набор массы</h3>
+            <h3 class="programs__title programs__title--weight-gain">Набор массы</h3>
             <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="programs__link" href="#">Каталог pro</a>
           </li>
@@ -107,17 +110,17 @@
         <dl class="living-example__stats stats">
           <div class="stats__item">
             <dt class="stats__number">5 кг</dt>
-            <dd class="stats__description">Снижение<br>веса</dd>
+            <dd class="stats__description">Снижение веса</dd>
           </div>
           <div class="stats__item">
             <dt class="stats__number">60 дней</dt>
-            <dd class="stats__description">Затрачено<br>времени</dd>
-          </div>
-          <div class="stats__item">
-            <dt class="stats__number">15 000 руб.</dt>
-            <dd class="stats__description">Затраты на питание:</dd>
+            <dd class="stats__description">Затрачено времени</dd>
           </div>
         </dl>
+        <div class="living-example__stats-expenses stats-expenses">
+          <span class="stats-expenses__text">Затраты на питание:</span>
+          <span class="stats-expenses__expenses">15 000 руб.</span>
+        </div>
         <div class="living-example__result">
           <picture>
             <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/sliders/cat-before-tablet-desktop@1x.png 1x, images/sliders/cat-before-tablet-desktop@2x.png 2x">

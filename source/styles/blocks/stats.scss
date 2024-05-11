@@ -1,4 +1,7 @@
 .stats__item {
+  width: 124px;
+  height: 56px;
+  padding-top: 15px;
   border: 1px solid #cdcdcd;
 }
 
@@ -7,12 +10,73 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
+  margin-bottom: 8px;
 }
 
 .stats__description {
+  display: block;
+  width: 80px;
+  height: 19px;
+  background-color: #eaeaea;
   margin: 0;
+  margin-left: 18px;
   font-family: $second-font;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+}
+
+.stats-expenses__text {
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.stats-expenses__expenses {
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .stats__item {
+    width: 162px;
+    height: 72px;
+    padding-top: 15px;
+    border: 1px solid #cdcdcd;
+  }
+
+  .stats__number {
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 11px;
+  }
+
+  .stats__description {
+    display: block;
+    width: 130px;
+    height: 50px;
+    background-color: #ffffff;
+    margin: 0;
+    margin-left: 15px;
+    font-family: $second-font;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .stats-expenses__text {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    color: #000000;
+  }
+
+  .stats-expenses__expenses {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    color: #000000;
+  }
 }
