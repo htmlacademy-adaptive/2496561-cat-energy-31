@@ -41,8 +41,40 @@
     flex-flow: row wrap;
     text-align: center;
     margin: 0;
-    padding: 25px 34px 0 30px;
+    padding: 25px 0 0;
     width: 768px;
+    min-height: 50px;
+  }
+
+  .main-header__logo-link {
+    display: flex;
+    padding: 0;
+    text-decoration: none;
+    height: 50px;
+  }
+
+  .main-header__logo {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+  }
+
+  .main-header__text-logo {
+    margin: 0;
+    position: absolute;
+    top: 41px;
+    left: 103px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    margin: 0;
+    padding: 25px 0 0;
+    width: 1220px;
     min-height: 50px;
   }
 

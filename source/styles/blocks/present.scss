@@ -1,5 +1,4 @@
 .present {
-  margin: 35px 20px 40px;
   background-image: url("../../images/backgrounds/background-gift-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -32,4 +31,38 @@
   text-align: center;
   color: #ffffff;
   padding: 187px 61px 43px 58px;
+}
+
+@media (min-width: $tablet-width) {
+  .present {
+    background-image: url("../../images/backgrounds/background-gift-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 707px;
+    height: 200px;
+  }
+
+  .present__container {
+    position: relative;
+    background-color: rgba(104, 183, 56, 0.85);
+    width: 707px;
+    height: 200px;
+  }
+
+  .present__container::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/icon-gift.svg");
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 82px;
+    top: 57px;
+    left: 77px;
+  }
+
+  .present__description {
+    margin: 0;
+    text-align: left;
+    padding: 71px 125px 69px 421px;
+  }
 }

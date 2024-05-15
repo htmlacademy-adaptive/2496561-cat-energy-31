@@ -1,5 +1,6 @@
 .advantages__container {
-  padding: 0 20px 49px;
+  width: 280px;
+  padding-bottom: 49px;
 }
 
 .advantages__title {
@@ -91,7 +92,8 @@
 
 @media (min-width: $tablet-width) {
   .advantages__container {
-    padding: 15px 109px 47px 30px;
+    width: 700px;
+    padding: 15px 70px 47px 0;
   }
 
   .advantages__title {

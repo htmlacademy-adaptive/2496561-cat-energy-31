@@ -5,6 +5,10 @@
   border: 1px solid #cdcdcd;
 }
 
+.stats__item--expenses {
+  border: none;
+}
+
 .stats__number {
   font-size: 24px;
   line-height: 24px;
@@ -26,16 +30,20 @@
   text-align: center;
 }
 
-.stats-expenses__text {
+.stats__description--expenses {
+  font-family: $primary-font;
   line-height: 20px;
   text-align: center;
   color: #000000;
+  text-transform: uppercase;
 }
 
-.stats-expenses__expenses {
+.stats__number--expenses {
+  font-family: $primary-font;
   line-height: 20px;
   text-align: center;
   color: #000000;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,6 +52,18 @@
     height: 72px;
     padding-top: 15px;
     border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    margin-right: 43px;
+  }
+
+  .stats__item--expenses {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    width: 174px;
+    margin-left: auto;
+    border: none;
+    margin-right: 0;
+    padding: 0;
   }
 
   .stats__number {
@@ -66,17 +86,23 @@
     line-height: 14px;
   }
 
-  .stats-expenses__text {
-    font-size: 20px;
+  .stats__number--expenses {
+    width: 174px;
+    font-family: $primary-font;
     line-height: 20px;
+    font-size: 20px;
     text-align: right;
-    color: #000000;
+    margin: 0;
   }
 
-  .stats-expenses__expenses {
-    font-size: 20px;
+  .stats__description--expenses {
+    width: 174px;
+    height: 20px;
+    font-family: $primary-font;
     line-height: 20px;
+    font-size: 20px;
     text-align: right;
-    color: #000000;
+    margin: 0;
+    margin-bottom: 9px;
   }
 }

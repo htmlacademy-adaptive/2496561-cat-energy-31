@@ -1,8 +1,26 @@
+.characteristics__title {
+  width: 76px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 14px;
+}
+
+.characteristics__container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .characteristics__name {
   font-family: $second-font;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+  color: #444444;
 }
 
 .characteristics__meaning {
@@ -10,4 +28,43 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+  color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .characteristics__title {
+    width: 135px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 55px 20px 60px;
+  }
+
+  .characteristics__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .characteristics__container::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border: 1px solid #cdcdcd;
+    width: 250px;
+  }
+
+  .characteristics__name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .characteristics__meaning {
+    font-family: $second-font;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
