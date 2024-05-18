@@ -1,3 +1,8 @@
+.additional-products {
+  width: 320px;
+}
+
+
 .additional-products__title {
   position: relative;
   margin: 0;
@@ -12,7 +17,7 @@
   content: "";
   position: absolute;
   top: 12px;
-  left: 286px;
+  left: 266px;
   border-top: 2px solid $bg-basic-green;
   width: 34px;
 }
@@ -87,6 +92,112 @@
 }
 
 @media (min-width: $tablet-width) {
+  .additional-products {
+    width: 768px;
+  }
+
+  .additional-products__title {
+    position: relative;
+    font-size: 32px;
+    line-height: 32px;
+    padding-left: 40px;
+    margin-bottom: 40px;
+  }
+
+  .additional-products__title::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: -30px;
+    border-top: 2px solid $bg-basic-green;
+    width: 30px;
+  }
+
+  .additional-products__title::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 381px;
+    border-top: 2px solid $bg-basic-green;
+    width: 357px;
+  }
+
+  .additional-products__list {
+    width: 708px;
+    margin: 0;
+    padding: 26px 38px 28px;
+    list-style: none;
+    margin-bottom: 70px;
+    border: 1px solid #cdcdcd;
+  }
+
+  .additional-products__item {
+    width: 632px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 54px;
+    padding: 0;
+  }
+
+  .additional-products__item::before {
+    border: none;
+  }
+
+  .additional-products__item::after {
+    content: "";
+    position: absolute;
+    bottom: -26px;
+    left: -38px;
+    width: 707px;
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .additional-products__item--last {
+    display: flex;
+    margin: 0;
+  }
+
+  .additional-products__item--last::after {
+    border: none;
+  }
+
+  .additional-products__name {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-products__characteristics {
+    display: block;
+    padding: 0;
+  }
+
+  .additional-products__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-products__price {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 49px;
+  }
+
+  .additional-products__link-button {
+    display: block;
+    width: 632px;
+    padding: 10px 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products {
+    width: 768px;
+  }
+
   .additional-products__title {
     position: relative;
     font-size: 32px;

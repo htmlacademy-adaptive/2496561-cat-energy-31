@@ -1,12 +1,22 @@
 .stats__item {
   width: 124px;
   height: 56px;
+  margin-bottom: 20px;
   padding-top: 15px;
   border: 1px solid #cdcdcd;
 }
 
 .stats__item--expenses {
+  margin: 0;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: flex-end;
+  width: 200px;
   border: none;
+  padding: 0;
+  align-items: center;
+  min-height: 20px;
+  margin-left: 46px;
 }
 
 .stats__number {
@@ -31,19 +41,24 @@
 }
 
 .stats__description--expenses {
+  width: 125px;
   font-family: $primary-font;
+  font-size: 14px;
   line-height: 20px;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .stats__number--expenses {
   font-family: $primary-font;
+  font-size: 14px;
   line-height: 20px;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -79,6 +94,67 @@
     width: 130px;
     height: 50px;
     background-color: #ffffff;
+    margin: 0;
+    margin-left: 15px;
+    font-family: $second-font;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .stats__number--expenses {
+    width: 174px;
+    font-family: $primary-font;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: right;
+    margin: 0;
+  }
+
+  .stats__description--expenses {
+    width: 174px;
+    height: 20px;
+    font-family: $primary-font;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: right;
+    margin: 0;
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stats__item {
+    width: 162px;
+    height: 72px;
+    padding-top: 15px;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    margin-right: 43px;
+  }
+
+  .stats__item--expenses {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    width: 174px;
+    margin-left: auto;
+    border: none;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .stats__number {
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 11px;
+  }
+
+  .stats__description {
+    display: block;
+    width: 130px;
+    height: 50px;
+    background-color: transparent;
     margin: 0;
     margin-left: 15px;
     font-family: $second-font;

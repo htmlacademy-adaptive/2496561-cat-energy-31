@@ -68,3 +68,41 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .characteristics__title {
+    width: 135px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 55px 20px 60px;
+  }
+
+  .characteristics__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .characteristics__container::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border: 1px solid #cdcdcd;
+    width: 250px;
+  }
+
+  .characteristics__name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .characteristics__meaning {
+    font-family: $second-font;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

@@ -1,9 +1,14 @@
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: top;
   width: 320px;
   text-align: center;
   background-image: url("../../images/backgrounds/background-hero-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
+  padding: 0;
 }
 
 .hero__container {
@@ -38,12 +43,14 @@
   width: 280px;
   height: 40px;
   padding: 10px 39px;
+  margin: auto;
 }
 
 
 @media (min-width: $tablet-width) {
   .hero {
     width: 709px;
+    margin: auto;
   }
 
   .hero__container {
@@ -75,6 +82,7 @@
   }
 
   .hero__link {
+    margin: 0;
     position: relative;
     bottom: 585px;
     left: 90px;
@@ -89,16 +97,67 @@
 
 @media (min-width: $desktop-width) {
   .hero {
+    position: relative;
+    top: -113px;
+    right: 0;
+    z-index: -1;
     width: 1440px;
+    height: 694px;
     background-image: url("../../images/backgrounds/background-hero-desktop@1x.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
+    padding-left: 190px;
   }
 
   .hero__container {
+    width: 1250px;
+    height: 694px;
     background: none;
-    background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85) 55%, transparent 50%);
+    background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85) 55%, #ffffff 50%);
     padding: 0;
+  }
+
+  .hero__image {
+    position: relative;
+    top: -260px;
+    left: 0;
+  }
+
+  .hero__header {
+    width: 450px;
+    padding: 0;
+    padding-top: 224px;
+  }
+
+  .hero__title {
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+
+  .hero__slogan {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #000000;
+  }
+
+  .hero__link {
+    margin: 0;
+    position: relative;
+    bottom: 448px;
+    left: 0;
+    display: block;
+    font-size: 20px;
+    line-height: 26px;
+    width: 244px;
+    height: 54px;
+    padding: 14px 26px;
   }
 }

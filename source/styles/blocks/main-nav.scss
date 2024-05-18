@@ -1,8 +1,8 @@
 .main-nav__toggle {
   display: none;
-  position: absolute;
-  top: 23px;
-  right: 20px;
+  position: relative;
+  top: -44px;
+  right: -280px;
   background-image: url("../../icons/open-navigation.svg");
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -13,9 +13,9 @@
 
 .main-nav__toggle--close {
   display: block;
-  position: absolute;
-  top: 23px;
-  left: 282px;
+  position: relative;
+  top: -44px;
+  right: -280px;
   background-image: url("../../icons/close-navigation.svg");
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -31,6 +31,7 @@
   }
 
   .main-nav__navigation {
-    padding-top: 14px;
+    margin-left: 540px;
+    padding-top: 16px;
   }
 }
