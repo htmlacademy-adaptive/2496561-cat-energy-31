@@ -6,6 +6,7 @@
 
 @media (min-width: $tablet-width) {
   .main-footer {
+    margin: auto;
     width: 768px;
     min-height: 147px;
   }
@@ -14,6 +15,21 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    padding: 55px 30px;
+    padding-top: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    margin: auto;
+    width: 768px;
+    min-height: 147px;
+  }
+
+  .main-footer__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-top: 55px;
   }
 }
