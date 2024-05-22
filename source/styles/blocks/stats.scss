@@ -130,15 +130,17 @@
     border: 1px solid #cdcdcd;
     border-radius: 4px;
     margin-right: 43px;
+    margin-bottom: 60px;
   }
 
   .stats__item--expenses {
     display: flex;
-    flex-flow: column-reverse wrap;
-    width: 174px;
+    flex-flow: row-reverse wrap;
+    width: 436px;
     margin-left: auto;
     border: none;
     margin-right: 0;
+    margin-bottom: 0;
     padding: 0;
   }
 
@@ -154,7 +156,7 @@
     display: block;
     width: 130px;
     height: 50px;
-    background-color: transparent;
+    background-color: #eaeaea;
     margin: 0;
     margin-left: 15px;
     font-family: $second-font;
@@ -163,7 +165,7 @@
   }
 
   .stats__number--expenses {
-    width: 174px;
+    width: 150px;
     font-family: $primary-font;
     line-height: 20px;
     font-size: 20px;

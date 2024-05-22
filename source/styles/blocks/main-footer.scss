@@ -1,32 +1,25 @@
 .main-footer {
-  width: 320px;
-  min-height: 240px;
   background-color: #f2f2f2;
 }
 
-@media (min-width: $tablet-width) {
-  .main-footer {
-    margin: auto;
-    width: 768px;
-    min-height: 147px;
-  }
+.main-footer__container {
+  min-height: 240px;
+}
 
+@media (min-width: $tablet-width) {
   .main-footer__container {
+    min-height: 147px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    justify-content: center;
     padding-top: 55px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-footer {
-    margin: auto;
-    width: 768px;
-    min-height: 147px;
-  }
-
   .main-footer__container {
+    min-height: 169px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;

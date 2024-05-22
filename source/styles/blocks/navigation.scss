@@ -91,11 +91,11 @@
     border: none;
   }
 
-  .navigation__item--current {
+  .navigation__item--desktop {
     position: relative;
   }
 
-  .navigation__item--current::after {
+  .navigation__item--desktop::after {
     content: "";
     position: absolute;
     border-bottom: 2px solid #ffffff;
@@ -104,7 +104,7 @@
     left: 0;
   }
 
-  .navigation__link {
+  .navigation__link--desktop {
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;

@@ -135,9 +135,9 @@
   .product-card__link {
     position: absolute;
     top: -70px;
-    left: 62px;
+    left: 45px;
     display: block;
-    width: 200px;
+    width: 169px;
     height: 210px;
     text-decoration: none;
     color: #222222;
@@ -145,18 +145,17 @@
   }
 
   .product-card__link--small {
-    padding: 19px;
+    padding: 19px 4px;
   }
 
   .product-card__link--big {
-    padding: 2px 16px;
+    padding: 7px 1px;
   }
 
   .product-card__container {
     padding: 0;
     width: 170px;
-    margin-left: 77px;
-    margin-right: 77px;
+    margin: 0;
   }
 
   .product-card__description {
@@ -191,10 +190,10 @@
 
   .product-card__link-button {
     display: block;
-    width: 250px;
-    padding: 10px 50px;
+    width: 169px;
+    padding: 10px 30px;
     color: inherit;
     background-color: #f2f2f2;
-    margin-left: 37px;
+    margin: 0;
   }
 }

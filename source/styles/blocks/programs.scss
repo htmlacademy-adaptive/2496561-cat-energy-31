@@ -1,8 +1,6 @@
 .programs__container {
-  width: 320px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin: auto;
 }
 
 .programs__list {
@@ -122,8 +120,6 @@
 
 @media (min-width: $tablet-width) {
   .programs__container {
-    width: 708px;
-    margin: auto;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -192,13 +188,117 @@
   }
 
   .programs__description {
-    width: 440px;
     font-family: $second-font;
     font-size: 16px;
     line-height: 24px;
     text-align: left;
     margin: 0;
     padding: 0 53px 48px 52px;
+    border: none;
+  }
+
+  .programs__description::after {
+    display: none;
+  }
+
+  .programs__link {
+    position: relative;
+    bottom: 0;
+    left: 52px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .programs__link::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/icon-arrow.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 12px;
+    bottom: 5px;
+    left: 122px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .programs__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+
+  .programs__item {
+    min-height: 374px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .programs__item--weight-loss::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: $bg-basic-green;
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .programs__item--weight-loss::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/cat-slim.svg");
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
+  }
+
+  .programs__item--weight-gain::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: $bg-basic-green;
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .programs__item--weight-gain::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/cat-pro.svg");
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 33px;
+  }
+
+  .programs__title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: left;
+    padding: 77px 0 0 214px;
+    margin-bottom: 73px;
+  }
+
+  .programs__description {
+    font-family: $second-font;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin: 0;
+    padding: 0 0 23px 52px;
+    border: none;
   }
 
   .programs__description::after {

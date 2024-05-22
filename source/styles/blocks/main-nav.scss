@@ -31,7 +31,14 @@
   }
 
   .main-nav__navigation {
+    margin-left: 50px;
+    padding-top: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__navigation {
     margin-left: 540px;
-    padding-top: 16px;
+    padding-top: 14px;
   }
 }
