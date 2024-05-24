@@ -1,23 +1,16 @@
 .main-header {
-  display: grid;
-  grid-template-columns: 320px;
-  text-align: center;
-  margin: auto;
   padding: 0;
-  width: 320px;
-  min-height: 264px;
 }
 
 .main-header__logo-link {
+  width: 260px;
   display: flex;
   text-decoration: none;
-  height: 66px;
-  width: 100%;
   flex-flow: row wrap;
   align-items: center;
   justify-content: flex-start;
   gap: 56px;
-  margin-left: 20px;
+  padding: 13px 20px 12px;
 }
 
 .main-header__logo-link:hover {
@@ -32,20 +25,17 @@
   .main-header {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
     text-align: center;
-    margin: auto;
-    margin-top: 25px;
-    min-width: 704px;
-    min-height: 50px;
+    min-height: 75px;
   }
 
   .main-header__logo-link {
     display: flex;
     flex-flow: row wrap;
-    width: 204px;
     margin: 0;
-    height: 50px;
     gap: 13px;
+    padding: 25px 30px;
   }
 }
 
@@ -54,18 +44,16 @@
     display: flex;
     flex-flow: row wrap;
     text-align: center;
-    margin: auto;
-    margin-top: 55px;
-    min-width: 1220px;
-    min-height: 59px;
+    min-width: 1440px;
+    min-height: 143px;
   }
 
   .main-header__logo-link {
     display: flex;
     flex-flow: row wrap;
-    width: 204px;
+    width: 400px;
     margin: 0;
-    height: 59px;
     gap: 14px;
+    padding: 55px 55px 29px 110px;
   }
 }

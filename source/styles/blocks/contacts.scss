@@ -26,7 +26,7 @@
   background-image: url("../../images/backgrounds/background-map-mobile@1x.png");
   background-color: #f2f2f2;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: bottom;
   width: 100%;
   min-height: 362px;
@@ -43,6 +43,7 @@
     min-height: 200px;
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -60,10 +61,10 @@
     width: 163px;
   }
 
-  .contacts__map {
+  .contacts__map iframe {
     background-image: url("../../images/backgrounds/background-map-tablet@1x.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     min-height: 400px;
   }
@@ -106,10 +107,10 @@
     width: 163px;
   }
 
-  .contacts__map {
+  .contacts__map iframe {
     background-image: url("../../images/backgrounds/background-map-desktop@1x.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     min-height: 400px;
   }

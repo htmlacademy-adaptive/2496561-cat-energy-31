@@ -86,6 +86,7 @@
     text-align: center;
     padding: 8px 0 7px;
     border: none;
+    margin: 0 120px 0 160px;
   }
 
   .footer-social__list {
@@ -101,20 +102,6 @@
 
 @media (min-width: $desktop-width) {
   .footer-social {
-    min-height: 22px;
-    position: relative;
-    text-align: center;
-    padding: 8px 0 7px;
-    border: none;
-  }
-
-  .footer-social__list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 24px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    margin: 0 376px 0 416px;
   }
 }

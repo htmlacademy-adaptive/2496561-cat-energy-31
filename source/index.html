@@ -15,7 +15,7 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--index">
   <header class="main-header container">
     <a class="main-header__logo-link" href="index.html">
       <picture>
@@ -35,14 +35,14 @@
       </button>
       <div class="main-nav__navigation navigation">
         <ul class="navigation__list">
-          <li class="navigation__item navigation__item--current navigation__item--desktop">
-            <a class="navigation__link navigation__link--desktop navigation__link--current" href="index.html">Главная</a>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--index-desktop navigation__link--current navigation__link--index-current" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--desktop" href="catalog.html">Каталог продукции</a>
+            <a class="navigation__link navigation__link--index-desktop" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--desktop" href="#">Подбор программы</a>
+            <a class="navigation__link navigation__link--index-desktop" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -142,12 +142,13 @@
         <p class="contacts__description">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
       </div>
       <div class="contacts__map">
+        <span class="visually-hidden">Карта с расположением магазина «Cat Energy»</span>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.15848538882386!2d30.32331828829156!3d59.9384169274726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1716213298232!5m2!1sru!2sru" width="320" height="400" allowfullscreen loading="lazy"></iframe>
       </div>
     </section>
   </main>
-  <footer class="main-footer container">
-    <div class="main-footer__container">
+  <footer class="main-footer">
+    <div class="main-footer__container container">
       <section class="footer-logo">
         <h2 class="visually-hidden">Текстовый логотип сайта</h2>
         <a class="footer-logo__logo" href="#">
