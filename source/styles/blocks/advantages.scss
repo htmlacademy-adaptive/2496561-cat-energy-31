@@ -1,15 +1,15 @@
 .advantages__container {
-  padding-bottom: 49px;
+  padding-bottom: 28px;
 }
 
 .advantages__title {
   margin: 0;
-  font-weight: 400;
+  font-weight: $base-font-weight;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
   margin-bottom: 40px;
-  color: #000000;
+  color: $base-color-title;
 }
 
 .advantages__list {
@@ -18,27 +18,20 @@
   list-style: none;
 }
 
-.advantages__description {
-  font-family: $second-font;
-  margin: 0;
-  margin-left: 80px;
-  margin-bottom: 20px;
-}
-
 .advantages__item {
   position: relative;
   min-height: 60px;
   margin-bottom: 20px;
-}
 
-.advantages__item::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  top: 0;
-  left: 0;
-  background-color: $bg-basic-green;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: $bg-basic-green;
+  }
 }
 
 .advantages__item--nutrients::after {
@@ -89,6 +82,13 @@
   left: 18px;
 }
 
+.advantages__description {
+  font-family: $second-font;
+  margin: 0;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .advantages__container {
     padding-top: 15px;
@@ -98,223 +98,81 @@
   .advantages__title {
     font-size: 60px;
     line-height: 60px;
-    margin: 0;
-    text-align: left;
     margin-bottom: 32px;
   }
 
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    grid-template-rows: minmax(280px, 1fr);
     grid-gap: 37px 130px;
-    margin: 0;
     padding: 0;
     counter-reset: section;
-    padding-right: 79px;
-  }
-
-  .advantages__description {
-    font-family: $second-font;
-    margin: 0;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: left;
-    padding: 151px 4px 57px 0;
-  }
-
-  .advantages__description::after {
-    position: absolute;
-    counter-increment: section;
-    content: counters(section, ".") " ";
-    font-family: $primary-font;
-    top: 0;
-    right: auto;
-    left: 118px;
-    font-size: 280px;
-    line-height: 280px;
-    color: #f2f2f2;
-    z-index: -1;
+    padding-right: 73px;
   }
 
   .advantages__item {
     margin: 0;
-    position: relative;
-  }
 
-  .advantages__item::before {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    top: 40px;
-    left: 1px;
-    background-color: $bg-basic-green;
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+      left: 1px;
+    }
   }
 
   .advantages__item--nutrients::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../../icons/icon-leaf.svg");
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 28px;
     top: 66px;
     left: 27px;
   }
 
   .advantages__item--view::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../../icons/icon-glass-of-water.svg");
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 28px;
     top: 66px;
     left: 27px;
   }
 
   .advantages__item--nutrition::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../../icons/icon-eat.svg");
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 28px;
     top: 66px;
     left: 27px;
   }
 
   .advantages__item--time::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../../icons/icon-alarm.svg");
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 28px;
     top: 66px;
     left: 27px;
+  }
+
+  .advantages__description {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 151px 0 57px;
+
+    &::after {
+      position: absolute;
+      counter-increment: section;
+      content: counters(section, ".") " ";
+      font-family: $primary-font;
+      top: 0;
+      right: auto;
+      left: 115px;
+      font-size: 280px;
+      line-height: 280px;
+      color: $bg-basic-text;
+      z-index: -1;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__container {
-    padding-top: 71px;
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 11px;
     padding-bottom: 69px;
   }
 
-  .advantages__title {
-    font-size: 60px;
-    line-height: 60px;
-    margin: 0;
-    text-align: left;
-    margin-bottom: 32px;
-  }
-
   .advantages__list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(280px, 100%);
-    grid-gap: 0;
-    column-gap: 80px;
-    margin: 0;
+    grid-gap: 0 80px;
     padding: 0;
-    counter-reset: section;
-  }
-
-  .advantages__description {
-    font-family: $second-font;
-    margin: 0;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: left;
-    padding: 151px 0 57px;
-  }
-
-  .advantages__description::after {
-    position: absolute;
-    counter-increment: section;
-    content: counters(section, ".") " ";
-    font-family: $primary-font;
-    top: 0;
-    left: auto;
-    right: 0;
-    font-size: 280px;
-    line-height: 280px;
-    color: #f2f2f2;
-    z-index: -1;
-  }
-
-  .advantages__item {
-    margin: 0;
-    position: relative;
-  }
-
-  .advantages__item::marker {
-    line-height: 280px;
-    font-size: 30px;
-    color: #f2f2f2;
-  }
-
-  .advantages__item::before {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    top: 40px;
-    left: 1px;
-    background-color: $bg-basic-green;
-  }
-
-  .advantages__item--nutrients::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../../icons/icon-leaf.svg");
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 28px;
-    top: 66px;
-    left: 27px;
-  }
-
-  .advantages__item--view::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../../icons/icon-glass-of-water.svg");
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 28px;
-    top: 66px;
-    left: 27px;
-  }
-
-  .advantages__item--nutrition::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../../icons/icon-eat.svg");
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 28px;
-    top: 66px;
-    left: 27px;
-  }
-
-  .advantages__item--time::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../../icons/icon-alarm.svg");
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 28px;
-    top: 66px;
-    left: 27px;
   }
 }

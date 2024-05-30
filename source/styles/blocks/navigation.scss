@@ -10,7 +10,7 @@
 .navigation__item {
   text-align: center;
   width: 100%;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $border-color-link;
 }
 
 .navigation__link {
@@ -20,19 +20,23 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $base-color-title;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .navigation__list {
-    display: flex;
     flex-flow: row wrap;
-    gap: 34px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    padding-right: 34px;
+    padding-right: 17px;
   }
 
   .navigation__item {
@@ -50,64 +54,43 @@
   .navigation__link--current::after {
     content: "";
     position: absolute;
-    border-bottom: 2px solid #68b738;
-    width: 100%;
-    bottom: 0;
-    left: 0;
+    border-bottom: 2px solid $bg-basic-green;
+    width: calc(100% - 34px);
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .navigation__link {
     font-size: 18px;
     line-height: 24px;
-    padding: 39px 0 10px;
+    padding: 39px 17px 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .navigation__list {
     width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 31px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    padding-right: 110px;
-  }
-
-  .navigation__item {
-    position: relative;
-    min-height: 36px;
-    padding: 0;
-  }
-
-  .navigation__item::before {
-    display: none;
-  }
-
-  .navigation__link--current {
-    position: relative;
+    padding-right: 94px;
   }
 
   .navigation__link--index-current::after {
     content: "";
     position: absolute;
-    border-bottom: 2px solid #ffffff;
-    width: 100%;
-    bottom: 0;
-    left: 0;
+    border-bottom: 2px solid $bg-base-color;
+    width: calc(100% - 32px);
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .navigation__link {
     font-size: 20px;
     line-height: 30px;
-    padding: 71px 0 10px;
+    padding: 71px 16px 10px;
   }
 
   .navigation__link--index-desktop {
-    padding: 71px 0 10px;
-    font-size: 20px;
-    line-height: 30px;
-    color: #ffffff;
+    color: $bg-base-color;
   }
 }

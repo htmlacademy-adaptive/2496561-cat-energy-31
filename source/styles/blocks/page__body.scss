@@ -14,11 +14,17 @@
     z-index: -1;
     width: 50%;
     height: 694px;
-    background-image: url("../../images/backgrounds/background-hero-desktop@1x.png");
-    background-color: #525359;
+    background-image:
+      image-set(
+        url("../../images/backgrounds/background-hero-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/backgrounds/background-hero-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/backgrounds/background-hero-desktop@1x.png") type("image/png") 1x,
+        url("../../images/backgrounds/background-hero-desktop@2x.png") type("image/png") 2x
+      );
+    background-color: $bg-color-hero;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: top right;
+    background-position: left;
   }
 
   .page__body--index::after {
@@ -27,7 +33,7 @@
     right: 0;
     width: 50%;
     height: 694px;
-    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85) 100%, #525359 50%);
+    background-image: linear-gradient(to right, $bg-gradient-hero 100%, $bg-color-hero 50%);
     z-index: -1;
   }
 }

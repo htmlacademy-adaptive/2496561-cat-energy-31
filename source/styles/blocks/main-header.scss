@@ -1,5 +1,15 @@
-.main-header {
-  padding: 0;
+@media (max-width: $mobile-maxwidth) {
+  .main-header {
+    position: relative;
+    padding: 0;
+  }
+
+  .main-header::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    border-bottom: 1px solid $second-border-color;
+  }
 }
 
 .main-header__logo-link {
@@ -23,6 +33,7 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
+    padding: 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -31,8 +42,6 @@
   }
 
   .main-header__logo-link {
-    display: flex;
-    flex-flow: row wrap;
     margin: 0;
     gap: 13px;
     padding: 25px 30px;
@@ -41,16 +50,12 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    min-width: 1440px;
+    width: 1440px;
     min-height: 143px;
+    margin: 0 auto;
   }
 
   .main-header__logo-link {
-    display: flex;
-    flex-flow: row wrap;
     width: 400px;
     margin: 0;
     gap: 14px;

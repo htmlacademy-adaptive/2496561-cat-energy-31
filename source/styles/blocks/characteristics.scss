@@ -1,15 +1,24 @@
 .characteristics__title {
   display: block;
-  width: 76px;
+  width: 140px;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
+  font-weight: $base-font-weight;
   text-align: left;
   text-transform: uppercase;
   text-decoration: none;
   color: #222222;
-  margin-bottom: 14px;
+  padding: 20px 64px 14px 0;
+
+  &:hover,
+  &:focus {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .characteristics__container {
@@ -22,7 +31,7 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color: #444444;
+  color: $base-color-text;
 }
 
 .characteristics__meaning {
@@ -30,33 +39,30 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color: #444444;
+  color: $base-color-text;
 }
 
 @media (min-width: $tablet-width) {
   .characteristics__title {
-    width: 135px;
+    width: 250px;
+    padding: 20px 57px 21px 58px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    text-transform: uppercase;
-    margin: 0 55px 20px 60px;
   }
 
   .characteristics__container {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
+    padding-bottom: 11px;
 
-  .characteristics__container::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    border: 1px solid #cdcdcd;
-    width: 250px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 3px;
+      left: 0;
+      border: 1px solid $primary-border-color;
+      width: 250px;
+    }
   }
 
   .characteristics__name {
@@ -73,38 +79,11 @@
 
 @media (min-width: $desktop-width) {
   .characteristics__title {
-    width: 140px;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0 15px 23px;
-  }
-
-  .characteristics__container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+    width: 169px;
+    padding: 20px 14px 25px 15px;
   }
 
   .characteristics__container::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    border: 1px solid #cdcdcd;
     width: 169px;
-  }
-
-  .characteristics__name {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .characteristics__meaning {
-    font-family: $second-font;
-    font-size: 16px;
-    line-height: 20px;
   }
 }

@@ -1,19 +1,22 @@
 .footer-social {
   min-height: 62px;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $second-border-color;
 }
 
 .footer-social__list {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 4px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.footer-social__link {
+  display: block;
+  padding: 22px 10px;
 }
 
 .footer-social__link--vkontakte {
@@ -24,7 +27,7 @@
     height: 17px;
     mask-image: url("../../icons/icon-vkontakte.svg");
     mask-repeat: no-repeat;
-    background-color: #666666;
+    background-color: $bg-color-icon;
   }
 
   &:hover::before,
@@ -45,7 +48,7 @@
     height: 17px;
     mask-image: url("../../icons/icon-youtube.svg");
     mask-repeat: no-repeat;
-    background-color: #666666;
+    background-color: $bg-color-icon;
   }
 
   &:hover::before,
@@ -66,7 +69,7 @@
     height: 17px;
     mask-image: url("../../icons/icon-telegram.svg");
     mask-repeat: no-repeat;
-    background-color: #666666;
+    background-color: $bg-color-icon;
   }
 
   &:hover::before,
@@ -83,25 +86,14 @@
   .footer-social {
     min-height: 22px;
     position: relative;
-    text-align: center;
-    padding: 8px 0 7px;
     border: none;
-    margin: 0 120px 0 160px;
-  }
-
-  .footer-social__list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 24px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    margin: 0 110px 0 145px;
+    padding: 44px 0 42px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer-social {
-    margin: 0 376px 0 416px;
+    margin: 0 365px 0 400px;
   }
 }
