@@ -1,5 +1,5 @@
 .programs__container {
-  padding-top: 20px;
+  padding-top: 21px;
 }
 
 .programs__list {
@@ -22,7 +22,7 @@
   background-color: $bg-basic-green;
   width: 50px;
   height: 50px;
-  top: 24px;
+  top: 23px;
   left: 20px;
 }
 
@@ -32,7 +32,7 @@
   background-image: url("../../icons/cat-slim.svg");
   width: 36px;
   height: 50px;
-  top: 21px;
+  top: 20px;
   left: 27px;
 }
 
@@ -43,8 +43,8 @@
   background-color: $bg-basic-green;
   width: 50px;
   height: 50px;
-  top: 24px;
-  left: 20px;
+  top: 23px;
+  left: 21px;
 }
 
 .programs__item--weight-gain::after {
@@ -53,7 +53,7 @@
   background-image: url("../../icons/cat-pro.svg");
   width: 67px;
   height: 28px;
-  top: 35px;
+  top: 34px;
   left: 12px;
 }
 
@@ -71,7 +71,7 @@
 .programs__description {
   font-family: $second-font;
   margin: 0;
-  padding: 29px 0 23px;
+  padding: 29px 0 21px;
   margin-left: 20px;
   margin-right: 20px;
   border-bottom: 1px solid $second-border-color;
@@ -97,8 +97,8 @@
     transition: background-position 0.3s;
     width: 32px;
     height: 12px;
-    bottom: 24px;
-    left: 120px;
+    bottom: 22px;
+    right: 0;
   }
 
   &:hover::after,
@@ -124,7 +124,7 @@
   .programs__item--weight-loss::before {
     width: 200px;
     height: 200px;
-    top: 92px;
+    top: 93px;
     left: auto;
     right: 63px;
   }
@@ -132,7 +132,7 @@
   .programs__item--weight-loss::after {
     width: 140px;
     height: 194px;
-    top: 81px;
+    top: 82px;
     left: auto;
     right: 93px;
   }
@@ -140,7 +140,7 @@
   .programs__item--weight-gain::before {
     width: 200px;
     height: 200px;
-    top: 91px;
+    top: 92px;
     left: auto;
     right: 63px;
   }
@@ -148,7 +148,7 @@
   .programs__item--weight-gain::after {
     width: 268px;
     height: 112px;
-    top: 135px;
+    top: 136px;
     left: auto;
     right: 29px;
   }
@@ -168,13 +168,13 @@
   }
 
   .programs__link {
-    padding: 5px 20px 52px 53px;
+    padding: 5px 20px 53px 53px;
     font-size: 20px;
     line-height: 30px;
 
     &::after {
       bottom: 62px;
-      left: 185px;
+      right: -37px;
     }
   }
 }
@@ -200,33 +200,33 @@
   .programs__item--weight-loss::before {
     width: 100px;
     height: 100px;
-    top: 47px;
+    top: 46px;
     left: 52px;
   }
 
   .programs__item--weight-loss::after {
     width: 70px;
     height: 97px;
-    top: 41px;
+    top: 40px;
     left: 67px;
   }
 
   .programs__item--weight-gain::before {
     width: 100px;
     height: 100px;
-    top: 47px;
+    top: 46px;
     left: 52px;
   }
 
   .programs__item--weight-gain::after {
     width: 134px;
     height: 56px;
-    top: 67px;
+    top: 66px;
     left: 33px;
   }
 
   .programs__title {
-    padding: 77px 0 0 214px;
+    padding: 76px 0 0 214px;
     margin-bottom: 73px;
   }
 
@@ -236,6 +236,5 @@
 
   .programs__link::after {
     bottom: 63px;
-    left: 185px;
   }
 }

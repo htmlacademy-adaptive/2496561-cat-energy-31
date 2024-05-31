@@ -84,7 +84,7 @@
     padding-bottom: 80px;
 
     &::before {
-      top: 16px;
+      top: 14px;
     }
   }
 
@@ -117,6 +117,7 @@
 
 @media (min-width: $desktop-width) {
   .subscription {
+    overflow-x: hidden;
     padding-bottom: 104px;
 
     &::before {

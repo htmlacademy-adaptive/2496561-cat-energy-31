@@ -20,7 +20,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header container" data-test="header">
+  <header class="main-header main-header--catalog container" data-test="header">
     <a class="main-header__logo-link" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logotype/logo-desktop.svg">
@@ -288,7 +288,7 @@
               <h3 class="additional-products__name">Питьевая вода</h3>
               <div class="additional-products__characteristics">
                 <span class="additional-products__description">5 литров</span>
-                <span class="additional-products__price">50 ₽</span>
+                <span class="additional-products__price additional-products__price--fifty">50 ₽</span>
               </div>
               <a class="additional-products__link-button button" href="#">Заказать</a>
             </li>
@@ -332,7 +332,10 @@
       <div class="contacts__container">
         <div class="contacts__wrapper container">
           <h2 class="contacts__title">Приглашаем<br>к сотрудничеству<br>дилеров!</h2>
-          <p class="contacts__description">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+          <div class="contacts__description-wrapper">
+            <span class="contacts__description contacts__description-street">ул. Большая<br>Конюшенная, д. 19/8</span>
+            <span class="contacts__description">Санкт-Петербург</span>
+          </div>
         </div>
         <div class="contacts__map">
           <span class="visually-hidden">Карта с расположением магазина «Cat Energy»</span>

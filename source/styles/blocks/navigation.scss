@@ -70,8 +70,9 @@
 
 @media (min-width: $desktop-width) {
   .navigation__list {
+    justify-content: flex-end;
     width: 100%;
-    padding-right: 94px;
+    padding-right: 64px;
   }
 
   .navigation__link--index-current::after {
@@ -87,7 +88,7 @@
   .navigation__link {
     font-size: 20px;
     line-height: 30px;
-    padding: 71px 16px 10px;
+    padding: 41px 16px 9px;
   }
 
   .navigation__link--index-desktop {

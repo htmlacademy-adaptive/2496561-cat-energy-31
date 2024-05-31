@@ -24,6 +24,7 @@
 .characteristics__container {
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .characteristics__name {
@@ -58,7 +59,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 3px;
+      bottom: 7px;
       left: 0;
       border: 1px solid $primary-border-color;
       width: 250px;
@@ -84,6 +85,7 @@
   }
 
   .characteristics__container::after {
+    bottom: 5px;
     width: 169px;
   }
 }
