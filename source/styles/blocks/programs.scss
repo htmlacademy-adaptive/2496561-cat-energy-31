@@ -1,0 +1,240 @@
+.programs__container {
+  padding-top: 21px;
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.programs__item {
+  min-height: 266px;
+  margin-bottom: 20px;
+  background-color: $bg-basic-text;
+  position: relative;
+}
+
+.programs__item--weight-loss::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: $bg-basic-green;
+  width: 50px;
+  height: 50px;
+  top: 23px;
+  left: 20px;
+}
+
+.programs__item--weight-loss::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/cat-slim.svg");
+  width: 36px;
+  height: 50px;
+  top: 20px;
+  left: 27px;
+}
+
+.programs__item--weight-gain::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: $bg-basic-green;
+  width: 50px;
+  height: 50px;
+  top: 23px;
+  left: 21px;
+}
+
+.programs__item--weight-gain::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/cat-pro.svg");
+  width: 67px;
+  height: 28px;
+  top: 34px;
+  left: 12px;
+}
+
+.programs__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: $base-font-weight;
+  color: $base-color-title;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-left: 90px;
+}
+
+.programs__description {
+  font-family: $second-font;
+  margin: 0;
+  padding: 29px 0 21px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 1px solid $second-border-color;
+}
+
+.programs__link {
+  position: relative;
+  display: inline-block;
+  padding: 19px 47px 20px 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: $base-color-title;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/icon-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: -8px;
+    transition: background-position 0.3s;
+    width: 32px;
+    height: 12px;
+    bottom: 22px;
+    right: 0;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-position: 0;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__container {
+    padding-top: 0;
+  }
+
+  .programs__item {
+    min-height: 372px;
+    margin-bottom: 30px;
+  }
+
+  .programs__item--weight-loss::before {
+    width: 200px;
+    height: 200px;
+    top: 93px;
+    left: auto;
+    right: 63px;
+  }
+
+  .programs__item--weight-loss::after {
+    width: 140px;
+    height: 194px;
+    top: 82px;
+    left: auto;
+    right: 93px;
+  }
+
+  .programs__item--weight-gain::before {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: auto;
+    right: 63px;
+  }
+
+  .programs__item--weight-gain::after {
+    width: 268px;
+    height: 112px;
+    top: 136px;
+    left: auto;
+    right: 29px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 77px 228px 24px 53px;
+  }
+
+  .programs__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 316px 48px 52px;
+    border: none;
+  }
+
+  .programs__link {
+    padding: 5px 20px 53px 53px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      bottom: 62px;
+      right: -37px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__container {
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 82px;
+  }
+
+  .programs__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+
+  .programs__item {
+    min-height: 374px;
+    margin-bottom: 59px;
+  }
+
+  .programs__item--weight-loss::before {
+    width: 100px;
+    height: 100px;
+    top: 46px;
+    left: 52px;
+  }
+
+  .programs__item--weight-loss::after {
+    width: 70px;
+    height: 97px;
+    top: 40px;
+    left: 67px;
+  }
+
+  .programs__item--weight-gain::before {
+    width: 100px;
+    height: 100px;
+    top: 46px;
+    left: 52px;
+  }
+
+  .programs__item--weight-gain::after {
+    width: 134px;
+    height: 56px;
+    top: 66px;
+    left: 33px;
+  }
+
+  .programs__title {
+    padding: 76px 0 0 214px;
+    margin-bottom: 73px;
+  }
+
+  .programs__description {
+    padding: 0 61px 23px 52px;
+  }
+
+  .programs__link::after {
+    bottom: 63px;
+  }
+}

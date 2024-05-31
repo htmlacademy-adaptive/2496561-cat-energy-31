@@ -1,0 +1,144 @@
+.subscription {
+  position: relative;
+  padding-bottom: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    border-top: 2px solid $bg-basic-green;
+    width: 100vw;
+    z-index: -1;
+  }
+}
+
+.subscription__title {
+  width: 153px;
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: $base-font-weight;
+  color: $base-color-title;
+  margin-bottom: 32px;
+  background-color: $bg-base-color;
+  box-shadow: -40px 0 $bg-base-color, 40px 0 $bg-base-color;
+}
+
+.subscription__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $base-color-title;
+  margin-bottom: 24px;
+}
+
+.subscription__form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-rows: minmax(56px, 56px);
+  row-gap: 16px;
+}
+
+.subscription__input {
+  font-family: $primary-font;
+  padding: 13px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: $base-font-weight;
+  text-align: left;
+  border: 1px solid $primary-border-color;
+  text-transform: uppercase;
+  color: $base-color-text;
+
+  &:hover {
+    border-color: #e7e7e7;
+  }
+
+  &:focus {
+    outline: 2px solid $base-color-text;
+    outline-offset: -2px;
+    border-radius: 0;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
+  &:user-invalid {
+    outline: 2px solid #ff8282;
+    outline-offset: -2px;
+    background-color: #ffeeee;
+  }
+}
+
+.subscription__button {
+  font-size: 20px;
+  line-height: 26px;
+  padding: 15px 70px;
+}
+
+@media (min-width: $tablet-width) {
+  .subscription {
+    padding-bottom: 80px;
+
+    &::before {
+      top: 14px;
+    }
+  }
+
+  .subscription__title {
+    width: 204px;
+    margin: 0;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 66px;
+    margin-left: 40px;
+  }
+
+  .subscription__description {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 78px 24px;
+  }
+
+  .subscription__form {
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    gap: 0;
+    padding: 0 38px;
+  }
+
+  .subscription__button {
+    min-width: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subscription {
+    overflow-x: hidden;
+    padding-bottom: 104px;
+
+    &::before {
+      top: 19px;
+    }
+  }
+
+  .subscription__container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .subscription__title {
+    width: 253px;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 73px;
+  }
+
+  .subscription__form {
+    padding: 0 234px;
+  }
+}

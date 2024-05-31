@@ -1,0 +1,22 @@
+.button {
+  display: block;
+  font-family: $primary-font;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $bg-base-color;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-color: $bg-basic-green;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: $bg-status-color;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: $bg-status-color;
+}

@@ -1,7 +1,8 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Даниил Дворецкий](https://up.htmlacademy.ru/adaptive/31/user/2496561).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/id191422).
+* Сайт: [Мой проект «Cat Energy»](https://daniildvoretskiy.github.io/2496561-cat-energy-31/).
 
 ---
 

@@ -1,0 +1,25 @@
+.main-footer {
+  background-color: $bg-basic-text;
+}
+
+.main-footer__container {
+  min-height: 240px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__container {
+    min-height: 147px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__container {
+    width: 1440px;
+    margin: 0 auto;
+    min-height: 169px;
+  }
+}

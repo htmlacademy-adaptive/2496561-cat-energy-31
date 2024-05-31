@@ -1,0 +1,148 @@
+.catalog__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: $base-font-weight;
+  text-align: left;
+  color: $base-color-title;
+  padding: 27px 0 41px;
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr);
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+  list-style: none;
+}
+
+.catalog__item {
+  display: grid;
+  min-height: 209px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 50%));
+  padding-bottom: 6px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    border-top: 1px solid #ebebeb;
+    width: 100vw;
+  }
+}
+
+.catalog__item--more {
+  position: relative;
+  padding: 0;
+  display: block;
+  padding-bottom: 25px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    border-top: 1px solid #ebebeb;
+    width: 100vw;
+  }
+}
+
+.catalog__link-button {
+  display: block;
+  grid-column: 1 / -1;
+  height: 40px;
+  padding: 10px 90px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 65px 0 165px;
+
+    &::before {
+      border: none;
+    }
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+    gap: 137px 60px;
+    padding-bottom: 71px;
+  }
+
+  .catalog__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0;
+    background-color: $bg-basic-text;
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .catalog__characteristics {
+    width: 250px;
+    min-height: 157px;
+    padding-top: 141px;
+    padding-bottom: 25px;
+  }
+
+  .catalog__item--more {
+    justify-content: flex-start;
+    border: 2px solid $bg-basic-text;
+    background-color: $bg-base-color;
+    padding-top: 160px;
+    text-align: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .catalog__link-button {
+    width: 250px;
+    margin: 0 37px 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .catalog__title {
+    padding: 15px 0 165px;
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 144px 80px;
+    padding-bottom: 67px;
+  }
+
+  .catalog__characteristics {
+    width: 169px;
+    min-height: 167px;
+    padding-top: 131px;
+    padding-bottom: 30px;
+  }
+
+  .catalog__item--more {
+    padding-top: 148px;
+  }
+
+  .catalog__link-button {
+    width: 169px;
+    padding: 10px 50px;
+    margin: 0 37px 43px;
+  }
+}

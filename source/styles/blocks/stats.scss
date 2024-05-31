@@ -1,0 +1,145 @@
+.stats__item {
+  width: 124px;
+  margin: 0;
+  margin-bottom: 12px;
+  display: grid;
+}
+
+.stats__item--expenses {
+  margin: 0 0 18px 46px;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: flex-end;
+  width: 200px;
+  border: none;
+  padding: 0;
+  align-items: center;
+}
+
+.stats__number {
+  border: 1px solid $primary-border-color;
+  border-radius: 4px;
+  padding: 14px 0 16px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $base-color-title;
+}
+
+.stats__description {
+  display: block;
+  width: 77px;
+  background-color: $bg-secondary-color;
+  margin: -10px auto 8px;
+  font-family: $second-font;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.stats__description--time {
+  width: 87px;
+}
+
+.stats__description--expenses {
+  width: 125px;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $base-color-title;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.stats__number--expenses {
+  border: none;
+  padding: 0;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $base-color-title;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .stats__item {
+    margin: 0 43px 88px 0;
+    display: grid;
+    width: 162px;
+  }
+
+  .stats__item--expenses {
+    width: 174px;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  .stats__number {
+    border: 1px solid $primary-border-color;
+    border-radius: 4px;
+    padding: 15px 0 19px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .stats__description {
+    width: 114px;
+    background-color: $bg-base-color;
+    font-size: 14px;
+    line-height: 14px;
+    margin: -8px auto 8px;
+  }
+
+  .stats__description--time {
+    width: 142px;
+  }
+
+  .stats__number--expenses {
+    border: none;
+    padding: 0;
+    width: 174px;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: right;
+    order: 1;
+  }
+
+  .stats__description--expenses {
+    margin: 0;
+    width: 174px;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stats__item {
+    margin-bottom: 45px;
+  }
+
+  .stats__item--expenses {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: flex-start;
+    width: 436px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .stats__description {
+    background-color: $bg-secondary-color;
+  }
+
+  .stats__number--expenses {
+    order: 0;
+    width: 155px;
+  }
+}

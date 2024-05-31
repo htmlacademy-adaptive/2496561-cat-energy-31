@@ -1,0 +1,33 @@
+.footer-logo {
+  text-align: center;
+  border-bottom: 1px solid $second-border-color;
+
+  &:hover,
+  &:focus {
+    opacity: 80%;
+  }
+
+  .footer-logo__text-logo:active {
+    opacity: 60%;
+  }
+}
+
+.footer-logo__logo {
+  min-height: 84px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: block;
+  height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-logo {
+    border: none;
+  }
+
+  .footer-logo__logo {
+    min-height: 147px;
+    padding-top: 61px;
+    padding-bottom: 55px;
+  }
+}
